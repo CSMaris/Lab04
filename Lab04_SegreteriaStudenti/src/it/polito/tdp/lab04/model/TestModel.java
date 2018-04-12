@@ -6,9 +6,27 @@ public class TestModel {
 		
 		Model model = new Model();
 		
-		/*
-		 * 	Write here your test model
-		 */
+		int count=0;
+		
+		/*System.out.println("\n \n \n");
+		for(Studente s:model.listaStudenti())
+		{
+			count++;
+		System.out.println(s);	
+		}*/
+		
+	
+		
+		Corso c=new Corso("Ingegneria della qualità","01NBAPG",8,1);
+		for(Studente s:model.getIscritti(c))
+		{
+		count++;
+		System.out.println(s);
+			
+		}
+		
+		System.out.println(count);
+		
 
 	}
 
